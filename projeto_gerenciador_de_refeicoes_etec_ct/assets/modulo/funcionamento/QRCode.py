@@ -1,5 +1,4 @@
 import pyqrcode
-import png
 import os
 
 class QRCode:

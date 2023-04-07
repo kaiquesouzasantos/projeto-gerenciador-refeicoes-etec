@@ -14,6 +14,7 @@ def proc_entrada_alunos(endereco_recebido):
         arquivo.func_ultima_atualizacao_alunos()
         arquivo.func_exclui_qrcodes()
         qrCode.func_gera_qrcodes(dados.func_carrega_dados(os.getcwd() + '/assets/dados/txt/alunos_cripto.txt'))
+        arquivo.func_escreve_titulo_relatorio()
 
         return True
     except Exception as e:

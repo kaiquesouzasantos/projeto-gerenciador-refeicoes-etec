@@ -30,7 +30,10 @@ class TelaContagem:
         self.data_atual = Data.func_retorna_data()
         self.periodo_atual = Data.func_retorna_periodo_str()
         self.ultima_leitura_tempo = Data.func_retorna_periodo_segundo()
-        self.refeicoes_servidas = str(len(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/restauracao/arquivo_restauracao.txt')))
+        self.refeicoes_servidas = str(
+            len(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/restauracao/arquivo_restauracao.txt')) +
+            len(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/restauracao/arquivo_repeticao_restauracao.txt'))
+        )
 
         # frame --------------------------=
         self.frame_1 = Interface.func_retorna_frame(self.janela, 800, 250)
@@ -43,7 +46,7 @@ class TelaContagem:
         ).place(x=50, y=20)
 
         customtkinter.CTkButton(
-            master=self.frame_1, text='Alunos Servidos: ' + self.refeicoes_servidas, width=335,font=(fonte, 18), fg_color='#424040', hover_color='#424040'
+            master=self.frame_1, text='Refeicoes Servidas: ' + self.refeicoes_servidas, width=335,font=(fonte, 18), fg_color='#424040', hover_color='#424040'
         ).place(x=50, y=60)
 
         customtkinter.CTkButton(

@@ -1,3 +1,6 @@
-import tela_inicial
+import tela_inicial, tela_erro
 
-tela_inicial.run()
+try:
+    tela_inicial.run()
+except:
+    tela_erro.run()
