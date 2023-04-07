@@ -55,6 +55,7 @@
   <img src="tela_atualizacao.png" width="500">
   <img src="tela_busca_por_email.png" width="500">
   <img src="tela_contagem.png" width="500">
+  <img src="tela_erro.png" width="500">
 </p>
 
 #
