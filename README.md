@@ -28,8 +28,8 @@
     - Apresenta os seguintes estados:
         - AGUARDANDO: aguardando o inicio da leitura;
         - LENDO: tentando capturar o QR Code;
-        - APROVADO: o codigo e correspondido na base de dados e nenhuma refeicao foi servida para esse aluno;
-        - NEGADO: o codigo e inexistente ou alguma refeicao ja foi servida a esse aluno.
+        - APROVADO: o codigo e correspondido na base de dados(a regra de negocio permite repeticoes de refeicao);
+        - NEGADO: o codigo e inexistente na base de dados.
 
     - Sao exibidas constantemente:
         - A contagem atual de refeicoes servidas;
@@ -41,7 +41,8 @@
         - Data do processo de contagem;
         - Horario de inicio;
         - Horario de termino;
-        - Quantidade de refeicoes servidas.
+        - Quantidade de refeicoes servidas;
+        - Quantidade de repeticoes.
 
     - Observacoes:
         - Por se tratar de uma aplicacao offline, se durante o processo de contagem, houver alguma interrupcao, ao reiniciar a aplicao, todas as informacoes serao restituidas, dado a um sistema de backup temporario transitivo.
