@@ -9,7 +9,8 @@
 ### SOBRE
 
 - Projeto desenvolvido com Python, utilizando OpenAI, com o objetivo de contabilizar refeicoes consumidas pelos alunos, evitando o desperdicio alimenticio.
-- O periodo de levantamento de requisitos e desenvolvimento foi de seis dias.
+- O periodo de levantamento de requisitos e desenvolvimento foi de seis dias;
+- O projeto foi solicitado pelo coordenador do curso MTEC-Desenvolvimento de Sistemas na Etec Cidade Tiradentes, Danadoni Lima dos Santos.
 
 #
 ### FUNCIONAMENTO
