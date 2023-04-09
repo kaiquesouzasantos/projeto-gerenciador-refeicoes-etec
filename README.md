@@ -1,6 +1,5 @@
 <h1 align=center>PROJETO-GERENCIADOR-DE-REFEICOES</h1>
 
-
 <p align="center">
   <img src="etec.png" width="500">
 </p>
