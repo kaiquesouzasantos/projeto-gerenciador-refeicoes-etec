@@ -1,4 +1,4 @@
-<h1 align=center>PYTHON-GERENCIADOR-DE-REFEICOES</h1>
+<h1 align=center>PROJETO-GERENCIADOR-DE-REFEICOES</h1>
 
 
 <p align="center">
