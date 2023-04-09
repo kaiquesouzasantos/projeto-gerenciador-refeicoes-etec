@@ -91,5 +91,5 @@ pip install opencv-python
 ### CONTRIBUIÇÃO
 
 ```
-$ git clone https://github.com/kaiquesouzasantos/python-gerenciador-de-refeicoes-etec-ct.git
+$ git clone https://github.com/kaiquesouzasantos/projeto-gerenciador-de-refeicoes-etec-ct.git
 ```
