@@ -52,12 +52,12 @@
 ### TELAS
 
 <p align="center">
-  <img src="tela_inicial.png" width="500">
-  <img src="tela_atualizacao.png" width="500">
-  <img src="tela_busca_email.png" width="500">
-  <img src="tela_contagem.png" width="500">
-  <img src="tela_desenvolvedor.png" width="500">
-  <img src="tela_erro.png" width="500">
+  <img src="tela_inicial_lg.png" width="500">
+  <img src="tela_atualizacao_lg.png" width="500">
+  <img src="tela_busca_por_email_lg.png" width="500">
+  <img src="tela_contagem_lg.png" width="500">
+  <img src="tela_desenvolvedor_lg.png" width="500">
+  <img src="tela_erro_lg.png" width="500">
 </p>
 
 #
