@@ -69,7 +69,7 @@
 - [TKinter]()
 - [CustomTKinter]()
 - [Thread]()
-- [Email]
+- [Email]()
 
 #
 ### EXECUCAO
