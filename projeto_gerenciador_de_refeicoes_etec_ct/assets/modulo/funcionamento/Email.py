@@ -5,8 +5,8 @@ import imghdr
 
 # autorizacoes
 
-EMAIL = 'kaiquesouzasantos90@gmail.com'
-SENHA = 'hepyyzzcecisgpgn'
+EMAIL = ''
+SENHA = ''
 SMTP = "smtp.gmail.com: 587"
 
 # conteudo
@@ -45,4 +45,3 @@ class Email:
         
         server.login(EMAIL, SENHA)
         server.sendmail(EMAIL, [destinatario], mensagem.as_string().encode('utf-8'))
-        print('Email enviado')
