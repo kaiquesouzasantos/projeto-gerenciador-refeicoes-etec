@@ -6,7 +6,7 @@ cx_Freeze.setup(
     name="Sistema de Controle da Etec",
     options={'build_exe':
                  {
-                    'packages': ['tkinter', 'customtkinter', 'datetime', 'hashlib', 'os', 'pyqrcode', 'threading'],
+                    'packages': ['tkinter', 'customtkinter', 'datetime', 'hashlib', 'os', 'pyqrcode', 'threading', 'imghdr', 'smtplib', 'email'],
                     'include_files': [
                         'assets'
                     ]
