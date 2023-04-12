@@ -8,7 +8,6 @@
 ### SOBRE
 
 - Projeto desenvolvido com Python, utilizando OpenAI, com o objetivo de contabilizar refeicoes consumidas pelos alunos, evitando o desperdicio alimenticio.
-- O periodo de levantamento de requisitos e desenvolvimento foi de seis dias;
 - O projeto foi solicitado pelo coordenador do curso MTEC-Desenvolvimento de Sistemas na Etec Cidade Tiradentes, Danadoni Lima dos Santos.
 
 #
@@ -16,7 +15,9 @@
 
 - *Cadastro de Alunos*: 
     - Realiza a leitura dos alunos, baseados em um arquivo de texto, contendo o email institucional respectivo;
-    - Realiza a criacao de um ponto de restauracao, criptografa e gera um QR Code(com o aluno criptografado). Todas as informacoes ficam armazenadas em uma pasta protegida.
+    - Realiza a criacao de um ponto de restauracao, criptografa e gera um QR Code(com o aluno criptografado);
+    - Executa o envio do QR Code para o aluno, via E-mail;
+    - Todas as informacoes ficam armazenadas em uma pasta protegida.
 
 - *Busca de QR Code Por Email*:
     - Ao ser digitado o Email Institucional do aluno, e realizado a busca do mesmo. Se existente, exibe o QR Code respectivo.
@@ -47,15 +48,15 @@
     - Observacoes:
         - Por se tratar de uma aplicacao offline, se durante o processo de contagem, houver alguma interrupcao, ao reiniciar a aplicao, todas as informacoes serao restituidas, dado a um sistema de backup temporario transitivo.
 
-
 #
 ### TELAS
 
 <p align="center">
   <img src="tela_inicial.png" width="500">
   <img src="tela_atualizacao.png" width="500">
-  <img src="tela_busca_por_email.png" width="500">
+  <img src="tela_busca_email.png" width="500">
   <img src="tela_contagem.png" width="500">
+  <img src="tela_desenvolvedor.png" width="500">
   <img src="tela_erro.png" width="500">
 </p>
 
