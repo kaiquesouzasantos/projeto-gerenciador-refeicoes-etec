@@ -25,6 +25,7 @@ para poder deleitar-se da refeição.
 Atenciosamente,
 <br><br>
 Kaique Souza Santos
+<br>
 Desenvolvedor do Sistema
 </p>
 """
