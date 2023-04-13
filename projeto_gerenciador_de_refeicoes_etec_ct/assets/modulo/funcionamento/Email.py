@@ -12,7 +12,21 @@ SMTP = "smtp.gmail.com: 587"
 # conteudo
 CORPO = """
 <p>ETEC CIDADE TIRADENTES - 199</p>
-<p>Segue </p>
+<p>
+Prezado(a) ALUNO(a), 
+<br><br>
+O gerenciamento de refeições servidas pela cantina sera administrado por QR CODE, 
+sendo baseado no E-mail Institucional(concedido a todos os aluno do Centro Paula Souza). 
+O procedimento sera consistido na apresentação do QR CODE ao leitor disponível na cantina, 
+para poder deleitar-se da refeição. 
+<br><br>
+<b>Recomendação:</b> Mantenha resguardado seus dados de acesso ao E-mail Institucional e preserve este QR CODE.
+<br><br>
+Atenciosamente,
+<br><br>
+Kaique Souza Santos
+Desenvolvedor do Sistema
+</p>
 """
 
 ASSUNTO = "ETEC CIDADE TIRADENTES - 199 - ACESSO PARA CANTINA"
