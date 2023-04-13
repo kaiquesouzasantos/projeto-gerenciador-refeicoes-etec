@@ -82,6 +82,9 @@ python main.py
 ### REQUERIMENTOS
 
 ```
+# Para o devido funcionamento, instale o Microsoft Visual C++ 2013 Redistributable, baseado em 64 ou 86 bits.
+# https://www.microsoft.com/en-US/download/details.aspx?id=40784
+
 pip install pyqrcode
 pip install tk
 pip install customtkinter
