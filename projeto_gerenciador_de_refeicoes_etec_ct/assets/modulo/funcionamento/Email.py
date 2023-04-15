@@ -4,10 +4,13 @@ from email.message import EmailMessage
 import imghdr
 
 # autorizacoes
+EMAIL_GMAIL =  ''
+SENHA_GMAIL = ''
+SMTP_GMAIL = "smtp.gmail.com: 587"
 
-EMAIL = ''
-SENHA = ''
-SMTP = "smtp.gmail.com: 587"
+EMAIL_OUTLOOK = ''
+SENHA_OUTLOOK = ''
+SMTP_OUTLOOK = "smtp.office365.com: 587"
 
 # conteudo
 CORPO = """
@@ -35,18 +38,15 @@ ASSUNTO = "ETEC CIDADE TIRADENTES - 199 - ACESSO PARA CANTINA"
 class Email:
     def envia_email(destinatario, imagem):
         mensagem = EmailMessage()
-
         mensagem['Subject'] = ASSUNTO
-        mensagem['From'] = EMAIL
         mensagem['To'] = destinatario 
-
         mensagem.add_header('Content-Type', 'text/html')
         mensagem.set_payload(CORPO)
 
         with open(os.getcwd() + '/assets/dados/qr_code/' + imagem +'.png', 'rb') as imagem_read:
             file_data = imagem_read.read()
             file_type = imghdr.what(imagem_read.name)
-            file_name = imagem_read.name
+            file_name = imagem + '.png'
 
         mensagem.add_attachment(
             file_data, 
@@ -54,9 +54,18 @@ class Email:
             subtype = file_type,
             filename = file_name
         )
-            
-        server = smtplib.SMTP(SMTP)
-        server.starttls()
+
+        if(Email.func_smtp(mensagem, EMAIL_OUTLOOK, SENHA_OUTLOOK, destinatario, SMTP_OUTLOOK) == False):
+            Email.func_smtp(mensagem, EMAIL_GMAIL, SENHA_GMAIL, destinatario, SMTP_GMAIL)
+                
+    def func_smtp(mensagem, email, senha, destinatario, smtp):
+        try:
+            mensagem['From'] = email    
+            server = smtplib.SMTP(smtp)
+            server.starttls()
         
-        server.login(EMAIL, SENHA)
-        server.sendmail(EMAIL, [destinatario], mensagem.as_string().encode('utf-8'))
+            server.login(email, senha)
+            server.sendmail(email, [destinatario], mensagem.as_string().encode('utf-8'))
+            return True
+        except:
+            return False
