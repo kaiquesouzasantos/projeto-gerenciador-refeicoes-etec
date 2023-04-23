@@ -23,7 +23,7 @@
     - Ao ser digitado o Email Institucional do aluno, e realizado a busca do mesmo. Se existente, exibe o QR Code respectivo.
 
 - *Contagem de Refeicoes*:
-    - Ao clicar em 'LER QR Code', a leitura do QR Code sera feita, baseada na Web Cam do dispositivo.
+    - Ao clicar em 'LER QR Code'(manual) ou quando a tela for inicializada(automatico), a leitura do QR Code sera feita, baseada na Web Cam do dispositivo.
     - Dado a alguns mecanimos de tratamento e verificacao, por meio de componentes visuais sao exibidos os estados do processo.
 
     - Apresenta os seguintes estados:
@@ -56,6 +56,7 @@
   <img src="tela_atualizacao_lg.png" width="500">
   <img src="tela_busca_por_email_lg.png" width="500">
   <img src="tela_contagem_lg.png" width="500">
+  <img src="tela_contagem_auto_lg.png" width="500">
   <img src="tela_desenvolvedor_lg.png" width="500">
   <img src="tela_erro_lg.png" width="500">
 </p>
