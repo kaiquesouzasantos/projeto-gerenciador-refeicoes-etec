@@ -18,10 +18,9 @@ if len(alunos_repeticao_contabilizados) == 0:
     alunos_repeticao_contabilizados = list()
 
 periodo_inicio = data.func_retorna_periodo()
-captura = cv2.VideoCapture(0, cv2.CAP_DSHOW)
-
 
 def proc_contagem():
+    captura = cv2.VideoCapture(0, cv2.CAP_DSHOW)
     validade = None
 
     while (validade == None):
