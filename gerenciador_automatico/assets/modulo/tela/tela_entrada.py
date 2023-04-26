@@ -9,6 +9,7 @@ from assets.modulo.funcionamento.Dados import Dados
 from assets.proc_entrada import proc_entrada_alunos
 from assets.modulo.reinicializacao import tela_entrada_rerun
 from assets.modulo.tela import tela_inicial
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
     
@@ -24,6 +25,7 @@ class TelaEntrada:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle | Atualizacao de Informacoes')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # variavel --------------------------
         self.ultima_atualizacao_data = str(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/txt/ultima_atualizacao.txt'))

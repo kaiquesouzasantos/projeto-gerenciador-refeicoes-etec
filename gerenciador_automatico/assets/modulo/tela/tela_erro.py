@@ -2,6 +2,7 @@ import customtkinter
 from tkinter import *
 
 from assets.modulo.interface.Interface import Interface
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
     
@@ -16,6 +17,7 @@ class TelaErro:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle | Erro de Inicializacao')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # frame --------------------------
         self.frame = Interface.func_retorna_frame(self.janela, 800, 400)

@@ -10,6 +10,7 @@ from assets.modulo.funcionamento.Dados import Dados
 from assets.proc_contagem import *
 from assets.modulo.reinicializacao import tela_contagem_rerun
 from assets.modulo.tela import tela_inicial
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
 
@@ -24,6 +25,7 @@ class TelaContagem:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle | Contagem de Refeicoes')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # img default --------------------------
         Interface.func_retorna_imagem(self.janela, os.getcwd() + '/assets/dados/img_processo/proc_aguardando.png', 0, 0)
@@ -35,7 +37,10 @@ class TelaContagem:
         self.refeicoes_repetidas = str(len(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/restauracao/arquivo_repeticao_restauracao.txt')))
         self.refeicoes_servidas = str(len(Dados.func_carrega_dados(os.getcwd() + '/assets/dados/restauracao/arquivo_restauracao.txt')) + int(self.refeicoes_repetidas))
 
-        # frame --------------------------=
+        # procedimento main --------------------------
+        self.func_contagem()
+
+        # frame --------------------------
         self.frame_1 = Interface.func_retorna_frame(self.janela, 800, 250)
         self.frame_1.place(x=0, y=150)
 
@@ -91,8 +96,6 @@ class TelaContagem:
             master=self.frame_1, text='Finalizar Contagem', width=700, font=(fonte, 20),fg_color='#00BF63', hover_color='#008243', text_color='#000',command=self.func_finaliza_processo
         ).place(x=50, y=200)
 
-        self.func_contagem()
-
     def rerun(self):
         self.janela.destroy()
         tela_contagem_rerun.rerun()
@@ -120,8 +123,8 @@ class TelaContagem:
         self.refeicoes_repetidas = 0
         self.refeicoes_servidas = 0
         self.janela.destroy()
-        tela_inicial.run()
-
+        encerra_processo.encerra()
+        
 # incializacao --------------------------
 def run():
     #TelaContagem().func_verifica_funcionamento()

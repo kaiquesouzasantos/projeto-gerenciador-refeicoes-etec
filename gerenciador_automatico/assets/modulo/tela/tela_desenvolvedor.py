@@ -4,6 +4,7 @@ from tkinter import *
 
 from assets.modulo.interface.Interface import Interface
 from assets.modulo.tela import tela_inicial
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
 
@@ -18,6 +19,7 @@ class TelaDesenvolvedor:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle | Desenvolvedor')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # img default --------------------------
         Interface.func_retorna_imagem(self.janela, os.getcwd() + '/assets/dados/desenvolvedor.png', 0, 0)

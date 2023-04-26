@@ -6,6 +6,7 @@ from assets.modulo.interface.Interface import Interface
 from assets.proc_busca import proc_busca_por_email
 from assets.modulo.reinicializacao import tela_busca_rerun
 from assets.modulo.tela import tela_inicial
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
 
@@ -20,6 +21,7 @@ class TelaBusca:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle | Busca Por Email')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # img default ------------------------
         Interface.func_retorna_imagem(self.janela, os.getcwd() + '/assets/dados/qr_code_default/qrcode_default.png', 20, 65)

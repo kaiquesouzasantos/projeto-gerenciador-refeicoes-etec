@@ -1,9 +1,11 @@
 import os
 import customtkinter
 from tkinter import *
+import cv2
 
 from assets.modulo.interface.Interface import Interface
 from assets.modulo.tela import tela_desenvolvedor, tela_busca, tela_entrada, tela_contagem
+from assets.modulo.procedimento import encerra_processo
 
 # config --------------------------
 
@@ -18,6 +20,7 @@ class TelaInicial:
     def __init__(self):
         # janela --------------------------
         self.janela = Interface.func_retorna_janela(800, 400, 'Sistema de Controle')
+        self.janela.protocol("WM_DELETE_WINDOW", encerra_processo.encerra)
 
         # img default --------------------------
         Interface.func_retorna_imagem(self.janela, os.getcwd() + '/assets/dados/logo.png', 0, 0)
