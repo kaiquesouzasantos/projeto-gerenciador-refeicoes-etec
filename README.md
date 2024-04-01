@@ -7,7 +7,7 @@
 #
 ### SOBRE
 
-- Programa desktop desenvolvido com Python, utilizando OpenAI, visando contabilizar refeições consumidas pelos alunos, evitando o desperdício alimentício. Utilizando-se de criptografia, email, visão computacional, QR Code e processamento assíncrono. 
+- Programa desktop desenvolvido com Python, utilizando OpenAI, visando auxiliar no fluxo de consumo alimentício escolar, evitando o desperdício dos mesmos. Utilizando-se de criptografia, mecanismo de notificação, visão computacional, QR Code e processamento assíncrono. 
 - O projeto foi solicitado pelo coordenador do curso MTEC-Desenvolvimento de Sistemas na Etec Cidade Tiradentes, Danadoni Lima dos Santos.
 
 #
