@@ -5,13 +5,13 @@
 </p>
 
 #
-### SOBRE
+### 📚 SOBRE
 
 - Programa desktop desenvolvido com Python, utilizando OpenAI, visando auxiliar no fluxo de consumo alimentício escolar, evitando o desperdício dos mesmos. Utilizando-se de criptografia, mecanismo de notificação, visão computacional, QR Code e processamento assíncrono. 
 - O projeto foi solicitado pelo coordenador do curso MTEC-Desenvolvimento de Sistemas na Etec Cidade Tiradentes, Danadoni Lima dos Santos.
 
 #
-### FUNCIONAMENTO
+### ⭐ FUNCIONAMENTO
 
 - *Cadastro de Alunos*: 
     - Realiza a leitura dos alunos, baseados em um arquivo de texto, contendo o email institucional respectivo;
@@ -49,7 +49,7 @@
         - Por se tratar de uma aplicacao offline, se durante o processo de contagem, houver alguma interrupcao, ao reiniciar a aplicao, todas as informacoes serao restituidas, dado a um sistema de backup temporario transitivo.
 
 #
-### TELAS
+### 🖥️ TELAS
 
 <p align="center">
   <img src="tela_inicial_lg.png" width="500">
@@ -62,7 +62,7 @@
 </p>
 
 #
-### TECNOLOGIAS
+### 💻 TECNOLOGIAS
 
 - [Python](https://www.python.org)
 - [CV2]()
@@ -73,14 +73,14 @@
 - [Email]()
 
 #
-### EXECUCAO
+### 👁️ EXECUCAO
 
 ```
 python main.py
 ```
 
 #
-### REQUERIMENTOS
+### 📋 REQUERIMENTOS
 
 ```
 # Para o devido funcionamento, instale o Microsoft Visual C++ 2013 Redistributable, baseado em 64 ou 86 bits.
@@ -94,7 +94,7 @@ pip install pyzbar
 ```
 
 #
-### CONTRIBUIÇÃO
+### 🔗 CONTRIBUIÇÃO
 
 ```
 $ git clone https://github.com/kaiquesouzasantos/projeto-gerenciador-de-refeicoes-etec-ct.git
