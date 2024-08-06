@@ -1,4 +1,4 @@
-<h1 align=center>🧮 ETEC CIDADE TIRADENTES - PROJETO GERENCIADOR DE REFEIÇÕES</h1>
+<h1 align=center>🧮 ETEC CIDADE TIRADENTES - GERENCIADOR DE REFEIÇÕES</h1>
 
 <p align="center">
   <img src="etec.png" width="500">
