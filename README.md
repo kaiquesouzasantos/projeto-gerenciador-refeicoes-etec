@@ -1,4 +1,4 @@
-<h1 align=center>PROJETO-GERENCIADOR-DE-REFEICOES</h1>
+<h1 align=center>🧮 ETEC CIDADE TIRADENTES - PROJETO GERENCIADOR DE REFEIÇÕES</h1>
 
 <p align="center">
   <img src="etec.png" width="500">
@@ -97,5 +97,5 @@ pip install pyzbar
 ### 🔗 CONTRIBUIÇÃO
 
 ```
-$ git clone https://github.com/kaiquesouzasantos/projeto-gerenciador-de-refeicoes-etec-ct.git
+$ git clone https://github.com/kaiquesouzasantos/projeto-gerenciador-refeicoes-etec.git
 ```
